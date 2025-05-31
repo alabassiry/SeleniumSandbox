@@ -1,0 +1,16 @@
+<suite name="Regression Test">
+    <parameter name="timeout" value="10"/>
+    <parameter name="url" value="https://blazedemo.com/"/>
+    <test name="Tests Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.TestHomePage"/>
+        </classes>
+    </test>
+    <test name="Tests Safari">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="tests.TestHomePage"/>
+        </classes>
+    </test>
+</suite>
